@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Snowboard Products</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+  <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  <div th:replace="header::myheader"></div>
+</head>
+
+<body>
+  <div th:replace="header::mynavbar"></div>
+  <div class="p-5 text-center bg-light">
+    <h4 class="mb-3"> </h4>
+  </div>
+
+  <div>
+    <h1 style="text-align: center; margin-top:20px">Snowboards</h1>
+  </div>
+  <div class=""container style="padding: 20px 20px 20px 20px">
+    <div class="row">
+      <div th:each="productDto : ${productDtos}" class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img th:if="${productDto.image == null}" th:src="@{/static/images/logo.png}" class="card-img-top" alt="Product Image">
+          <img th:if="${productDto.image != null}" th:src="@{${productDto.productImagePath}}"
+               class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 th:text="${productDto.name}" class="card-title"></h5>
+            <p th:text="${productDto.shortDescription}" class="card-text"></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a th:href="'mailto:'+${productDto.userEmail}" class="btn btn-sm btn-outline-secondary">Contact Me to Purchase</a>
+              </div>
+              <p th:text="'$'+${productDto.price}" class="text-muted"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div th:if="${#lists.isEmpty(productDtos)}">
+      <div style="display:flex; justify-content:center; align-items:center; height:50vh;
+            margin-left: 20vh; margin-right: 20vh; text-align: center">
+        <h4 class="font-weight-bold">No items available for sale, check back later.</h4>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="text-center">
+      <p>Skiswap Control Panel - Copyright &copy; SkiSwap</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/signup.css" th:href = "@{/static/css/signup.css}">
+    </head>
+
+    <body>
+        <div id="signupWindow">
+            <form action="#" th:action="@{/signupProcess}"  th:object="${userDto}" class="signupForm" method="post"
+                  onsubmit="return validateInputs(this);" enctype="utf8">
+                <div class="avatarImageContainer">
+                    <img th:src="@{/static/images/avatar.png}" alt="Avatar" class = "avatar">
+                </div>
+                <div class="signupContainer">
+                    <input type="text" th:field="*{userName}" placeholder="Username" id="username"/>
+                    <span th:if="${#fields.hasErrors('userName')}"
+                          th:errors="*{userName}"></span><br/>
+
+                    <input type="email" th:field="*{email}" placeholder="Email" id="email"/>
+                    <span th:if="${#fields.hasErrors('email')}"
+                          th:errors="*{email}"></span><br/>
+
+                    <input type="password" th:field="*{password}" placeholder="Password" id="password"/>
+                    <span th:if="${#fields.hasErrors('password')}"
+                          th:errors="*{password}"></span><br/>
+
+                    <input type="password" th:field="*{matchingPassword}" placeholder="Repeat Password" id="matchingPass"/>
+                    <span th:if="${#fields.hasErrors('matchingPassword')}"
+                          th:errors="*{matchingPassword}"></span><br/>
+                    <input id="signupButton" type="submit" value="Create Account" name="submitButton"/>
+                    <h4><a th:href="@{/}">Back To Home</a></h4>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="webjars/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/signup.js" th:href="@{/static/js/signup.js}"></script>
+    </body>
+</html>
+

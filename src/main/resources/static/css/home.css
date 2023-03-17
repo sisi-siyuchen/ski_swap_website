@@ -1,0 +1,91 @@
+ .navbar, .brand, a, td, signOutButton, input {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+body {
+  color: #66615b;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+}
+
+.aspect-ratio-1 {
+  aspect-ratio: 5/3;
+}
+
+  .navbar .container {
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    position: relative;
+  }
+
+
+
+  .navbar-header .navbar-toggle {
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+
+
+
+
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    line-height: 1.6;
+    margin: 25px 0px;
+    padding: 10px 15px;
+    opacity: .8;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 5px
+  }
+
+
+
+
+
+
+
+  .navbar{
+    background-image: url('../images/stevens_pass_header_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

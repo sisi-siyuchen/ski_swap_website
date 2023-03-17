@@ -1,0 +1,331 @@
+/*!
+
+ =========================================================
+ * Paper Kit 2 - v2.0.0
+ =========================================================
+
+ * Product Page: http://www.creative-tim.com/product/paper-kit-2
+ * Copyright 2017 Creative Tim (http://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+/*      light colors - used for select dropdown         */
+/*           Font Smoothing      */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin: 30px 0 0;
+}
+
+h1, .h1 {
+  font-size: 3.6em;
+}
+
+h2, .h2 {
+  font-size: 2.8em;
+}
+
+h3, .h3 {
+  font-size: 1.825em;
+  line-height: 1.4;
+  margin: 20px 0 0px;
+}
+
+h4, .h4 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+h5, .h5 {
+  font-size: 1.35em;
+  line-height: 1.4em;
+}
+
+h6, .h6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  color: #9A9A9A;
+  line-height: 1.5em;
+}
+
+h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
+  font-size: 60%;
+}
+
+
+
+.title-uppercase {
+  text-transform: uppercase;
+}
+
+.description {
+  color: #9A9A9A;
+}
+
+
+
+
+
+.text-primary, .text-primary:hover {
+  color: #51cbce !important;
+}
+
+.text-info, .text-info:hover {
+  color: #51bcda !important;
+}
+
+.text-success, .text-success:hover {
+  color: #6bd098 !important;
+}
+
+.text-warning, .text-warning:hover {
+  color: #fbc658 !important;
+}
+
+.text-danger, .text-danger:hover {
+  color: #f5593d !important;
+}
+
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+}
+
+.title.text-center {
+  margin-bottom: 50px;
+}
+
+/*     General overwrite     */
+body {
+  color: #66615b;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+}
+
+a {
+  color: #51bcda;
+}
+a:hover, a:focus {
+  color: #2ba9cd;
+  text-decoration: none;
+}
+
+hr {
+  border-color: #F1EAE0;
+}
+
+
+
+
+
+
+.iframe-container iframe {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+  body {
+    position: relative;
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  .navbar .container {
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    position: relative;
+  }
+
+  .fog-low {
+    margin-bottom: -35px;
+  }
+
+  .presentation-title {
+    font-size: 5em;
+  }
+
+  .presentation-subtitle {
+    margin-top: 40px;
+  }
+
+  .title-brand {
+    max-width: 450px;
+  }
+  .title-brand .type {
+    font-size: 16px;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+.title-brand {
+  max-width: 730px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+}
+
+
+.fog-low {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: -35%;
+  margin-bottom: -50px;
+  width: 110%;
+  opacity: .85;
+}
+.fog-low img {
+  width: 100%;
+}
+.fog-low.right {
+  margin-left: 30%;
+  opacity: 1;
+}
+
+
+
+.moving-clouds {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 250.625em;
+  height: 43.75em;
+  -webkit-animation: cloudLoop 80s linear infinite;
+  animation: cloudLoop 80s linear infinite;
+}
+
+@keyframes cloudLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.presentation-title {
+  font-size: 8em;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  background: #fbf8ec;
+  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.presentation-subtitle {
+  font-size: 2.5em;
+  color: #FFFFFF;
+}
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    line-height: 1.6;
+    margin: 25px 0px;
+    padding: 10px 15px;
+    opacity: .8;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px
+  }
+
+
+  .wrapper {
+    -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    left: 0;
+    background-color: white;
+  }
+
+
+.page-header {
+  background-color: #B2AFAB;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 999px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-header .filter::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+
+
+
+

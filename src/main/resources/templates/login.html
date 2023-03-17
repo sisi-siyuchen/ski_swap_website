@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/login.css" th:href = "@{/static/css/login.css}">
+        <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+    <div id="loginWindow">
+        <form method="post" action="#" th:action="@{/home}">
+            <div class="avatarImageContainer">
+                <img th:src="@{/static/images/avatar.png}" alt="Avatar" class = "avatar">
+            </div>
+            <div class="loginContainer">
+                <div th:if="${param.error}">
+                    <div class="alert alert-danger" style="margin-bottom:2vh">
+                        <strong>Sorry, we don't recognize this email address and/or password.
+                        Please double check your spelling.</strong>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email"  name="email" class="form-control" required="" autofocus="">
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required="">
+                <input id="loginButton" type="submit" value="Sign in" name="submitButton"/>
+                <h4><a th:href="@{/}">Back To Home</a></h4>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>

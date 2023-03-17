@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+/* same background image */
+body {
+    box-sizing: border-box;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    background-size: cover;
+    background: url("../images/stevens_pass.jpg") no-repeat center center fixed;
+  }
+
+/* flexbox to format forms */
+#loginWindow {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding-top: 8%;
+  }
+
+  /* Bordered form */
+  form {
+      background-color: gainsboro;
+      box-shadow: 10px 15px 10px rgba(0,0,0,0.15);
+      width: 30%;
+      height: 80%;
+      background: linear-gradient( rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.55));
+    }
+
+  /* Center the avatar image inside this container */
+  .avatarImageContainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+
+  /* Avatar image */
+  img.avatar {
+    width: 35%;
+    margin-top: -80px;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+  /* Format the text size */
+  label{
+      font-size: large;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=email], input[type=password]{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 18px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: large;
+      font-family: 'Comfortaa', sans-serif;
+    }
+
+  #loginButton {
+      background-color: #6da3edfd;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Comfortaa', sans-serif;
+      font-size: large;
+      font-weight: bold;
+      opacity: 0.8;
+      transition: opacity 0.15s; /* for the hover and active */
+    }
+
+  /* Add a hover effect for buttons */
+  #loginButton:hover {
+      opacity: 1;
+      color:black
+    }
+
+    #loginButton:active {
+      opacity: 0.5;
+    }
+
+  h4{
+      text-align: center;
+      font-family: 'Comfortaa', sans-serif;
+  }
+
+  /* Add padding to containers */
+  .loginContainer {
+      padding: 26px 46px 26px 46px;
+  }

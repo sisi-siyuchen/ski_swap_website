@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<html lang="en">
+<head>
+    <div th:replace="header::myheader"></div>
+    <title>Home</title>
+</head>
+
+<body>
+    <div th:replace="header::mynavbar"></div>
+    <div class="p-5 text-center bg-light">
+        <h4 class="mb-3"> </h4>
+    </div>
+
+    <!-- Code below is for the function of enabling user to be a buyer -->
+<!--    <div th:if="${message != null}" class="alert alert-success text-center">-->
+<!--        <p th:text="${message}"></p>-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        <form action=#  th:action="@{/addAsSeller}" method="post">-->
+<!--            <input id="addAsSeller" type="submit" value="Become a seller" />-->
+<!--        </form>-->
+<!--    </div>-->
+
+
+    <div style="display:flex; justify-content:center; align-items:center; height:80vh;
+                margin-left: 20vh; margin-right: 20vh; text-align: center">
+        <div class="card bg-light aspect-ratio-1">
+            <div class="card-body d-flex align-items-center">
+                <div>
+                    <h3 class="card-title">Welcome to your homepage!</h3>
+
+                    <h5 class="card-text">You could explore the used gear around, or post your used gears for sale.</h5>
+                    <p class="card-text">Skiswap is a private ski club community where you could exchange your used skiing & Snowboarding gears.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-center">
+            <p>Skiswap Control Panel - Copyright &copy; SkiSwap</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

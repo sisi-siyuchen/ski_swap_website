@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Confirmation</title>
+  <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/signup.css" th:href = "@{/static/css/signup.css}">
+</head>
+
+<body>
+  <div id="signupWindow">
+    <form action="#" th:action="@{/signup-process}"  th:object="${userDto}" class="signupForm" method="post"
+          onsubmit="return validateInputs(this);" enctype="utf8">
+      <div class="avatarImageContainer">
+        <img th:src="@{/static/images/avatar.png}" alt="Avatar" class = "avatar">
+      </div>
+      <div class="signupContainer">
+        <div class="alert alert-light" role="alert">
+          Congrats! You have registered successfully. However, you are not able to sign in till the website administrator approves your signup request.
+        </div>
+<!--        <h1>Congrats! You have registered successfully. However, you are not able to sign in till the website administer approves your signup request.</h1>-->
+        <h4><a th:href="@{/}">Back To Home</a></h4>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="webjars/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/signup.js" th:href="@{/static/js/signup.js}"></script>
+</body>
+</html>
